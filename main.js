@@ -10,7 +10,7 @@ const channelForm = document.getElementById('channel-form');
 const channelInput = document.getElementById('channel-input');
 const videoContainer = document.getElementById('video-container');
 
-
+const defaultChannel = "Rishabh Bhandari 18BIT0238";
 
 //auth2 library
 function handleClientLoad(){
@@ -60,4 +60,11 @@ function handleAuthClick(){
 //logout
 function handleSignoutClick(){
   gapi.auth2.getAuthInstance().signOut();
+}
+
+//getting channel from API
+
+function getChannel(channel){
+
+  console.log(channel);
 }
